@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>task3_2.subs.Person</OriginalElement>
+  <nodes>
+    <node x="-984.0223079004329" y="682.8179545454545">task3_2.units.Group</node>
+    <node x="-673.9717870670997" y="581.155616883117">task3_2.subs.Person</node>
+    <node x="-628.3288598484849" y="880.8831168831169">task3_2.units.Department</node>
+    <node x="-1239.081895371785" y="993.3246753246754">task3_2.subs.Subject</node>
+    <node x="-461.4713203463202" y="708.6361363636365">task3_2.subs.Teacher</node>
+    <node x="-909.9198390151516" y="1304.0">task3_2.units.University</node>
+    <node x="-1239.081895371785" y="693.5322402597403">task3_2.subs.Student</node>
+    <node x="-657.8288598484849" y="1141.181909090909">task3_2.units.Faculty</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="task3_2.units.Department" target="task3_2.subs.Teacher" relationship="TO_MANY">
+      <point x="109.5" y="-14.999545454545455" />
+      <point x="-332.9711428571427" y="942.8835714285715" />
+      <point x="15.00017748917756" y="63.0" />
+    </edge>
+    <edge source="task3_2.subs.Teacher" target="task3_2.subs.Person" relationship="GENERALIZATION">
+      <point x="0.0" y="-63.0" />
+      <point x="-347.9713203463202" y="630.155616883117" />
+      <point x="83.0" y="0.0" />
+    </edge>
+    <edge source="task3_2.subs.Student" target="task3_2.subs.Person" relationship="GENERALIZATION">
+      <point x="0.0" y="-35.0" />
+      <point x="-1164.581895371785" y="630.155616883117" />
+      <point x="-83.0" y="0.0" />
+    </edge>
+    <edge source="task3_2.subs.Teacher" target="task3_2.units.Department" relationship="DEPENDENCY">
+      <point x="0.0" y="63.0" />
+      <point x="-347.9713203463202" y="927.8835714285715" />
+      <point x="109.5" y="-29.999545454545455" />
+    </edge>
+    <edge source="task3_2.subs.Subject" target="task3_2.subs.Teacher" relationship="DEPENDENCY">
+      <point x="0.0" y="63.0" />
+      <point x="-1155.081895371785" y="1462.5" />
+      <point x="-287.9711428571427" y="1462.5" />
+      <point x="60.00017748917756" y="63.0" />
+    </edge>
+    <edge source="task3_2.units.Department" target="task3_2.subs.Teacher" relationship="DEPENDENCY">
+      <point x="109.5" y="15.000454545454545" />
+      <point x="-317.9711428571427" y="972.8835714285715" />
+      <point x="30.00017748917756" y="63.0" />
+    </edge>
+    <edge source="task3_2.subs.Teacher" target="task3_2.subs.Subject" relationship="DEPENDENCY">
+      <point x="105.00017748917756" y="63.0" />
+      <point x="-242.97114285714267" y="1507.5" />
+      <point x="-1200.081895371785" y="1507.5" />
+      <point x="-45.0" y="63.0" />
+    </edge>
+    <edge source="task3_2.subs.Teacher" target="task3_2.subs.Subject" relationship="TO_MANY">
+      <point x="90.00017748917756" y="63.0" />
+      <point x="-257.9711428571427" y="1492.5" />
+      <point x="-1185.081895371785" y="1492.5" />
+      <point x="-30.0" y="63.0" />
+    </edge>
+    <edge source="task3_2.subs.Subject" target="task3_2.subs.Teacher" relationship="TO_ONE">
+      <point x="-15.0" y="63.0" />
+      <point x="-1170.081895371785" y="1477.5" />
+      <point x="-272.9711428571427" y="1477.5" />
+      <point x="75.00017748917756" y="63.0" />
+    </edge>
+    <edge source="task3_2.subs.Teacher" target="task3_2.units.Department" relationship="TO_ONE">
+      <point x="-113.5" y="31.18227272727262" />
+      <point x="-518.8288598484849" y="802.8184090909092" />
+      <point x="0.0" y="-77.0" />
+    </edge>
+    <edge source="task3_2.units.University" target="task3_2.subs.Subject" relationship="TO_MANY">
+      <point x="-107.0" y="0.0" />
+      <point x="-1140.081895371785" y="1367.0" />
+      <point x="15.0" y="63.0" />
+    </edge>
+    <edge source="task3_2.subs.Student" target="task3_2.units.Group" relationship="DEPENDENCY">
+      <point x="74.5" y="0.0" />
+      <point x="-116.5" y="-59.28571428571428" />
+    </edge>
+    <edge source="task3_2.units.Group" target="task3_2.subs.Student" relationship="DEPENDENCY">
+      <point x="-116.5" y="-74.28571428571428" />
+      <point x="74.5" y="-15.0" />
+    </edge>
+    <edge source="task3_2.units.Group" target="task3_2.subs.Student" relationship="TO_MANY">
+      <point x="-116.5" y="-44.28571428571428" />
+      <point x="74.5" y="15.0" />
+    </edge>
+    <edge source="task3_2.units.Department" target="task3_2.units.Faculty" relationship="DEPENDENCY">
+      <point x="-30.0" y="77.0" />
+      <point x="-548.8288598484849" y="965.1818181818181" />
+      <point x="-30.0" y="-63.0" />
+    </edge>
+    <edge source="task3_2.units.Faculty" target="task3_2.units.Department" relationship="DEPENDENCY">
+      <point x="0.0" y="-63.0" />
+      <point x="-518.8288598484849" y="965.1818181818181" />
+      <point x="0.0" y="77.0" />
+    </edge>
+    <edge source="task3_2.subs.Student" target="task3_2.units.Group" relationship="TO_ONE">
+      <point x="74.5" y="30.0" />
+      <point x="-116.5" y="-29.285714285714278" />
+    </edge>
+    <edge source="task3_2.units.University" target="task3_2.units.Faculty" relationship="TO_MANY">
+      <point x="0.0" y="-63.0" />
+      <point x="-802.9198390151516" y="1219.1818181818182" />
+      <point x="-139.0" y="14.999909090909341" />
+    </edge>
+    <edge source="task3_2.units.Faculty" target="task3_2.units.Department" relationship="TO_MANY">
+      <point x="15.0" y="-63.0" />
+      <point x="-503.82885984848485" y="965.1818181818181" />
+      <point x="15.0" y="77.0" />
+    </edge>
+    <edge source="task3_2.units.Department" target="task3_2.units.Faculty" relationship="TO_ONE">
+      <point x="-15.0" y="77.0" />
+      <point x="-533.8288598484849" y="965.1818181818181" />
+      <point x="-15.0" y="-63.0" />
+    </edge>
+    <edge source="task3_2.units.University" target="task3_2.units.Faculty" relationship="DEPENDENCY">
+      <point x="107.0" y="-30.0" />
+      <point x="-563.8289299242424" y="1337.0" />
+      <point x="-45.00007007575755" y="63.0" />
+    </edge>
+    <edge source="task3_2.units.Faculty" target="task3_2.units.University" relationship="DEPENDENCY">
+      <point x="-15.000070075757549" y="63.0" />
+      <point x="-533.8289299242424" y="1367.0" />
+      <point x="107.0" y="0.0" />
+    </edge>
+    <edge source="task3_2.units.University" target="task3_2.subs.Subject" relationship="DEPENDENCY">
+      <point x="-15.0" y="-63.0" />
+      <point x="-817.9198390151516" y="1056.3246753246754" />
+      <point x="84.0" y="0.0" />
+    </edge>
+    <edge source="task3_2.units.Faculty" target="task3_2.units.University" relationship="TO_ONE">
+      <point x="-30.00007007575755" y="63.0" />
+      <point x="-548.8289299242424" y="1352.0" />
+      <point x="107.0" y="-15.0" />
+    </edge>
+    <edge source="task3_2.units.Department" target="task3_2.units.Group" relationship="TO_MANY">
+      <point x="-109.5" y="15.000454545454545" />
+      <point x="-817.9198390151516" y="972.8835714285715" />
+      <point x="49.60246888528127" y="105.00000000000006" />
+    </edge>
+    <edge source="task3_2.units.Group" target="task3_2.subs.Subject" relationship="TO_MANY">
+      <point x="-116.5" y="0.0" />
+      <point x="-1170.081895371785" y="787.8179545454545" />
+      <point x="-15.0" y="-63.0" />
+    </edge>
+    <edge source="task3_2.units.Department" target="task3_2.units.Group" relationship="DEPENDENCY">
+      <point x="-109.5" y="-14.999545454545455" />
+      <point x="-802.9198390151516" y="942.8835714285715" />
+      <point x="64.60246888528127" y="105.00000000000006" />
+    </edge>
+    <edge source="task3_2.subs.Subject" target="task3_2.units.Group" relationship="DEPENDENCY">
+      <point x="0.0" y="-63.0" />
+      <point x="-1155.081895371785" y="832.8184090909092" />
+      <point x="-116.5" y="45.0004545454546" />
+    </edge>
+    <edge source="task3_2.units.Group" target="task3_2.subs.Subject" relationship="DEPENDENCY">
+      <point x="-116.5" y="75.0004545454546" />
+      <point x="-1086.5689083587981" y="862.8184090909092" />
+      <point x="68.51298701298697" y="-63.0" />
+    </edge>
+    <edge source="task3_2.units.Group" target="task3_2.units.Department" relationship="DEPENDENCY">
+      <point x="30.00030790043286" y="105.00000000000006" />
+      <point x="-837.522" y="987.8835714285715" />
+      <point x="-109.5" y="30.000454545454545" />
+    </edge>
+    <edge source="task3_2.subs.Teacher" target="task3_2.units.Group" relationship="TO_ONE">
+      <point x="-113.5" y="-56.81818181818193" />
+      <point x="116.5" y="-73.0" />
+    </edge>
+    <edge source="task3_2.units.Group" target="task3_2.subs.Teacher" relationship="TO_ONE">
+      <point x="116.5" y="-96.68181818181807" />
+      <point x="-362.9713203463202" y="691.1361363636365" />
+      <point x="-15.0" y="-63.0" />
+    </edge>
+    <edge source="task3_2.subs.Subject" target="task3_2.units.Group" relationship="TO_ONE">
+      <point x="15.0" y="-63.0" />
+      <point x="-1140.081895371785" y="847.8184090909092" />
+      <point x="-116.5" y="60.0004545454546" />
+    </edge>
+    <edge source="task3_2.units.Group" target="task3_2.units.Department" relationship="TO_ONE">
+      <point x="79.60246888528127" y="105.00000000000006" />
+      <point x="-787.9198390151516" y="912.8835714285715" />
+      <point x="-109.5" y="-44.999545454545455" />
+    </edge>
+    <edge source="task3_2.units.Group" target="task3_2.subs.Teacher" relationship="DEPENDENCY">
+      <point x="116.5" y="4.5454545454504114E-4" />
+      <point x="-524.8182426948052" y="787.8184090909091" />
+      <point x="-524.8182426948052" y="787.8184090909092" />
+      <point x="-113.5" y="16.18227272727262" />
+    </edge>
+    <edge source="task3_2.subs.Teacher" target="task3_2.units.Group" relationship="DEPENDENCY">
+      <point x="-113.5" y="-41.81818181818193" />
+      <point x="116.5" y="-58.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8500000000000001" showDependencies="true" x="-657.1008403361346" y="1066.7647058823527" />
+  <SelectedNodes>
+    <node>task3_2.subs.Subject</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

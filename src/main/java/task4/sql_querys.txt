@@ -1,0 +1,12 @@
+SELECT account.account_id as Account, c.cust_id as Customer, account.avail_balance as Available
+FROM account
+JOIN customer as c on account.cust_id = c.cust_id
+WHERE account.status = 'active'
+  AND account.avail_balance > 1000.00;
+
+
+SELECT account.account_id as Account, customer.fed_id as Fed, product.name as Name
+FROM account, customer, product
+WHERE account.cust_id = customer.cust_id
+  AND account.product_cd = product.product_cd
+  AND customer.cust_type_cd = 'I';
